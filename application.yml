@@ -3,6 +3,14 @@ spring:
     username: root
     password: root
 
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/mohan529/grocery-config
+          clone-on-start: true
+    
+
 eureka:
   client:
     service-url:
